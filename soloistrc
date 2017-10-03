@@ -32,39 +32,27 @@ recipes:
 - sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
+# - sprout-osx-apps::textmate_preferences
+# - sprout-jetbrains-editors::rubymine
 
 node_attributes:
   sprout:
     git:
-      domain: pivotal.io
+      domain: returnly.com
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
-      projects:
-        -
-          name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+        - initials: em
+          name: Ernest Mishkin
+          username: ernest
     terminal:
       default_profile: 'Pro'
     settings:
       clock_format: EEE MMM d  h:mm:ss a
     dock_preferences:
-      orientation: 'left'
+      orientation: 'right'
       auto_hide: true
       clear_apps: true
       tile_size: 35
-      magnification: false
+      magnification: true
   homebrew:
     taps:
       - universal-ctags/universal-ctags
@@ -83,18 +71,32 @@ node_attributes:
       - watch
       - wget
       - rbenv-binstubs
+      - jq
+      - dos2unix
+      - ansible
+      - awscli
+      - go
+      - jenv
+      - httpie
+      - mcrypt
+      - mhash
+      - node
+      - python3
+      - redis
+      - rename
     casks:
-      - firefox
+      - java
       - flycut
       - rowanj-gitx
-      - github-desktop
       - google-chrome
       - google-drive
       - google-hangouts
       - macvim
       - skype
-      - textmate
-      - vagrant
-      - virtualbox
       - xquartz
       - xscope
+      - appcleaner
+      - dropbox
+      - evernote
+      - flux
+      - macdown
